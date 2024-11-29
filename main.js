@@ -4,31 +4,31 @@ let person = [
   {
     firstName: "Lars Henrik",
     lastName: "Roan Midtsæter",
-    age: "24",
+    age: 24,
     job: false,
   },
   {
     firstName: "Bax",
     lastName: "Fyyy",
-    age: "69",
+    age: 69,
     job: false,
   },
   {
     firstName: "Lars",
     lastName: "Krogsrud",
-    age: "13",
+    age: 13,
     job: true,
   },
   {
     firstName: "Marius",
     lastName: "Aasen",
-    age: "24",
+    age: 24,
     job: false,
   },
   {
     firstName: "Jesper",
     lastName: "Lotterud",
-    age: "24",
+    age: 24,
     job: true,
   },
   ,
@@ -65,6 +65,29 @@ console.log(person[2]);
 
 //5. Person three is throwing a giant party! create a function called fotballPubben(). The function should check if the person is over 18, print "party time" if they are and "too young" if they are not. It should also print the name of the person.
 // use a loop to call the function for every person in the array.
+
+function fotballPubben(i) {
+  {
+    if (person[i].age >= 18) {
+      return "It's party time " + person[i].firstName;
+    } else {
+      return "you're too young " + person[i].firstName;
+    }
+  }
+}
+
+for (let i = 0; i < person.length - 1; i++) {
+  console.log(fotballPubben(i));
+}
+
+// person.forEach((person) => {
+//   if (person.age >= 18) {
+//     console.log("It's party time " + person.firstName);
+//   } else {
+//     console.log("You're too young " + person.firstName);
+//   }
+// });
+
 //------------------------------------------------------------------------------------------------------------------------------------------------
 
 //6. It's time for school! Create a function called university. It should take in an person object as well as type of degree (bachelors or masters) as arguments.
