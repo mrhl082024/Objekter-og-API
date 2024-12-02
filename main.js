@@ -105,10 +105,11 @@ function university(person, degree) {
       person.age += 2;
       person.degree = "masters";
       person.student_loan = 6942069;
+      break;
   }
 }
-university(person[0], "bachelors");
-console.table(person[0]);
+university(person[1], "bachelors");
+console.table(person[1]);
 //------------------------------------------------------------------------------------------------------------------------------------------------
 
 // 7. API TIME!
