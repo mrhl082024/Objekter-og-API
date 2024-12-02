@@ -56,8 +56,8 @@ console.log(person[1].fullName());
 
 //4. Its the third person's birthday! And their job status changed. Update their age and job status using dot notation.
 
-person[2].age = 14;
-person[2].job = false;
+person[2].age++;
+person[2].job = !person[2].job;
 
 console.log(person[2]);
 
@@ -93,6 +93,22 @@ for (let i = 0; i < person.length - 1; i++) {
 //6. It's time for school! Create a function called university. It should take in an person object as well as type of degree (bachelors or masters) as arguments.
 // The function should update age and add two properties called "degree" and "student loan". The value of age, degree and student loan should change depending on what degree
 //was passed into the function. Send one person to uni and print the result.
+
+function university(person, degree) {
+  switch (degree) {
+    case "bachelors":
+      person.age += 18;
+      person.degree = "bachelors";
+      person.student_loan = 6969;
+      break;
+    case "masters":
+      person.age += 2;
+      person.degree = "masters";
+      person.student_loan = 6942069;
+  }
+}
+university(person[0], "bachelors");
+console.table(person[0]);
 //------------------------------------------------------------------------------------------------------------------------------------------------
 
 // 7. API TIME!
