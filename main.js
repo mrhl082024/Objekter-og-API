@@ -1,3 +1,6 @@
+import { handleInputs } from "./dom_handler.js";
+import { fetchBreeds } from "./fetch_data.js";
+
 //1. create an array of 5 person objects, the objhects should contain first name last name, age and job properties, jobb should be a boolean.
 
 let person = [
@@ -116,6 +119,12 @@ console.table(person[1]);
 // Read the documentation of this dog API: https://dog.ceo/dog-api/documentation/
 // Fetch 4 dogs of the same breed or sub-breed and display them in the DOM
 //feel free to change the ID of the images and/or add css.
+
+(async () => {
+  handleInputs();
+  fetchBreeds();
+})();
+
 //------------------------------------------------------------------------------------------------------------------------------------------------
 
 //BONUS!!

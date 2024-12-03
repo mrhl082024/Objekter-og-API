@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="module" src="main.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Objekter og API</title>
+    <script type="module" src="main.js" defer></script>
   </head>
+
   <body>
-    <main>
-      <img id="dog1" src="" alt="" />
-      <img id="dog2" src="" alt="" />
-      <img id="dog3" src="" alt="" />
-      <img id="dog4" src="" alt="" />
-    </main>
+    <nav id="inputs">
+      <label for="inputBreed">Choose a breed:</label>
+      <select name="inputBreed" id="inputBreed">
+        <option value="">-- Select Breed --</option>
+      </select>
+      <label for="inputAmount">Amount of pictures:</label>
+      <input type="number" value="4" id="inputAmount" />
+      <button id="display-btn">Display</button>
+    </nav>
+    <main id="container"></main>
   </body>
 </html>
